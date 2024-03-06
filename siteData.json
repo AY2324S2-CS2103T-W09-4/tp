@@ -7,11 +7,11 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
-        "john-doe": "John Doe",
+        "rahul": "Rahul",
         "greg-tan": "Greg Tan",
         "loh-yu-tong": "Loh Yu Tong",
-        "jean-doe": "Jean Doe",
-        "james-doe": "James Doe"
+        "jim-seah": "Jim Seah",
+        "irwyn-liong": "Irwyn Liong"
       },
       "headingKeywords": {}
     },
@@ -150,8 +150,24 @@
       "headingKeywords": {}
     },
     {
-      "src": "team/johndoe.md",
-      "title": "John Doe's Project Portfolio Page",
+      "src": "team/jim.md",
+      "title": "Jim Seah's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/rahul.md",
+      "title": "Rahul's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/udon.md",
+      "title": "Yu Tong's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
