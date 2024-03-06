@@ -113,6 +113,7 @@
         "adding-a-person-add": "Adding a person: add",
         "listing-all-persons-list": "Listing all persons : list",
         "deleting-a-person-delete": "Deleting a person : delete",
+        "adding-a-new-policy-to-a-person-addpolicy": "Adding a new policy to a person : addPolicy",
         "faq": "FAQ",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
