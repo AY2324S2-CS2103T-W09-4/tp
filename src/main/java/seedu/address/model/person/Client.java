@@ -62,7 +62,7 @@ public class Client extends Person {
     @Override
     public int hashCode() {
         return Objects.hash(getName(), getPhone(), getEmail(), getAddress(), getTags(),
-                meeting);
+                getMeeting());
     }
 
     @Override
