@@ -5,8 +5,9 @@ import seedu.address.model.Model;
 
 public class ReminderCommand extends Command {
     public static final String COMMAND_WORD = "reminder";
+    public static final String SHOWING_REMINDER_MESSAGE = "Opened reminder window.";
     @Override
     public CommandResult execute(Model model) throws CommandException {
-        return new CommandResult("Opening reminder window.");
+        return new CommandResult(SHOWING_REMINDER_MESSAGE, false, true, false);
     }
 }
