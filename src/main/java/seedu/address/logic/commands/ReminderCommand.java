@@ -3,6 +3,9 @@ package seedu.address.logic.commands;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 
+/**
+ * Opens the reminder window.
+ */
 public class ReminderCommand extends Command {
     public static final String COMMAND_WORD = "reminder";
     public static final String SHOWING_REMINDER_MESSAGE = "Opened reminder window.";

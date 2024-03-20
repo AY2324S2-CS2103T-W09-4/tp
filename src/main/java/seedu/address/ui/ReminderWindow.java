@@ -4,6 +4,8 @@ import java.util.logging.Logger;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import seedu.address.commons.core.LogsCenter;
 
@@ -57,6 +59,7 @@ public class ReminderWindow extends UiPart<Stage> {
         logger.fine("Showing reminders window for the application.");
         getRoot().show();
         getRoot().centerOnScreen();
+        closeOnEsc();
     }
 
     /**
@@ -78,5 +81,16 @@ public class ReminderWindow extends UiPart<Stage> {
      */
     public void focus() {
         getRoot().requestFocus();
+    }
+
+    /**
+     * Closes the reminder window when user presses "Esc" key.
+     */
+    public void closeOnEsc() {
+        getRoot().addEventHandler(KeyEvent.KEY_RELEASED, (KeyEvent event) -> {
+            if (event.getCode() == KeyCode.ESCAPE) {
+                hide();
+            }
+        });
     }
 }
