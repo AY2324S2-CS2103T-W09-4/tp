@@ -54,7 +54,6 @@
         "add-policy-feature": "Add Policy feature",
         "add-client-feature": "Add Client feature",
         "delete-client-feature": "Delete Client feature",
-        "add-policy-feature-2": "Add policy feature",
         "delete-policy-feature": "Delete Policy feature",
         "view-client-feature": "View Client feature",
         "view-meetings-feature": "View Meetings feature",
@@ -127,6 +126,7 @@
         "view-the-lists-of-meetings-for-this-week-meetings": "View the lists of meetings for this week : meetings",
         "clearing-all-client-entries-clear": "Clearing all client entries : clear",
         "exiting-insurebook-exit": "Exiting InsureBook : exit",
+        "finding-help-help": "Finding Help : help",
         "faq": "FAQ",
         "known-issues": "Known issues",
         "command-summary": "Command summary"
