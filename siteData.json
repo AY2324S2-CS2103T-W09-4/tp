@@ -111,7 +111,6 @@
     {
       "src": "UserGuide.md",
       "headings": {
-        "1-layout-default-md-title-and-quot-user-guide-and-quot-pagenav-3": "1---\nlayout: default.md\ntitle: &quot;User Guide&quot;\npageNav: 3",
         "insurebook-user-guide": "InsureBook User Guide",
         "quick-start": "Quick start",
         "features": "Features",
