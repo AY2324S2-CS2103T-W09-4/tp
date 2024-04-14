@@ -21,6 +21,7 @@ Class Name
 Class Phone
 Class Meeting
 Class Tag
+Class Policy
 
 Class I #FFFFFF
 }
@@ -46,6 +47,7 @@ Person *--> Email
 Person *--> Address
 Person *--> Meeting
 Person *--> "*" Tag
+Person *--> "*" Policy
 
 Person -[hidden]up--> I
 UniquePersonList -[hidden]right-> I
@@ -55,6 +57,7 @@ Name -[hidden]right-> Phone
 Phone -[hidden]right-> Address
 Address -[hidden]right-> Email
 Meeting -[hidden]right-> Meeting
+Policy -[hidden]right-> Policy
 
 'ModelManager --> "~* filtered" Person
 @enduml

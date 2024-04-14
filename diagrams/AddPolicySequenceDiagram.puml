@@ -9,38 +9,37 @@ Participant ":Parser" as parser PARSER_COLOR
 Participant ":Command" as command COMMAND_COLOR
 Participant ":Storage" as storage STORAGE_COLOR
 
-'enter command through UI
-user -[USER_COLOR]> ui : "addPolicy 2 pn/SaversScheme"
+' enter command through UI
+user -[USER_COLOR]> ui : "addPolicy 1 pol/SuperSaver type/CI\npolnum/39376234 pterm/Annually\nprem/3000 b/100000"
 activate ui UI_COLOR
 
-'command gets passed to logic object
-ui -[UI_COLOR]> logic : execute("addPolicy 2 pn/SaversScheme")
+' command gets passed to logic object
+ui -[UI_COLOR]> logic : execute("addPolicy 1 pol/SuperSaver type/CI\npolnum/39376234 pterm/Annually\nprem/3000 b/100000")
 activate logic LOGIC_COLOR
 
-'command gets parsed
-logic -[LOGIC_COLOR]> parser : parseCommand("addPolicy 2 pn/SaversScheme")
+' command gets parsed
+logic -[LOGIC_COLOR]> parser : parseCommand("addPolicy 1 ...")
 activate parser PARSER_COLOR_T1
 
-parser -[PARSER_COLOR]> parser : parse("2 pn/SaversScheme")
+parser -[PARSER_COLOR]> parser : parse("1 pol/SuperSaver ...")
 activate parser PARSER_COLOR_T2
-parser --[PARSER_COLOR]> parser : AddPolicyCommand(2, "SaversScheme")
+parser --[PARSER_COLOR]> parser : AddPolicyCommand(\n1, "SuperSaver", "CI", ...")
 deactivate parser PARSER_COLOR_T2
 
 parser --[PARSER_COLOR]> logic
 deactivate parser PARSER_COLOR_T1
 
-'execute the command and change the model
+' execute the command and change the model
 logic -[LOGIC_COLOR]> command : AddPolicyCommand.execute(Model)
 activate command COMMAND_COLOR_T1
 command --[COMMAND_COLOR]> logic : CommandResult(generateSuccessMessage(editedPerson))
 deactivate command
 
-
 ' Optional: Only if the view operation needs to interact with storage, e.g., for caching or refreshing data
 logic -[LOGIC_COLOR]> storage : saveAddressBook(ModelManager.getAddressBook())
 activate storage STORAGE_COLOR
 
-storage -[STORAGE_COLOR]> storage : JsonAddressBookStorage.saveAddressBook(addressBook, filePath)
+storage -[STORAGE_COLOR]> storage : JsonAddressBookStorage\n.saveAddressBook(addressBook, filePath)
 activate storage STORAGE_COLOR_T1
 storage --[STORAGE_COLOR]> storage
 deactivate storage
@@ -49,7 +48,7 @@ storage --[STORAGE_COLOR]> logic
 deactivate storage
 ' End of optional storage interaction
 
-logic --[LOGIC_COLOR]> ui : CommandResult(generateSuccessMessage(editedPerson))
+logic --[LOGIC_COLOR]> ui : CommandResult(\ngenerateSuccessMessage(editedPerson))
 deactivate logic
 
 ui--[UI_COLOR]> user

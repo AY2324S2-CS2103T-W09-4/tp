@@ -21,4 +21,5 @@ Person *--> Phone
 Person *--> Email
 Person *--> Address
 Person *--> Meeting
+Person --> "*" Policy
 @enduml
