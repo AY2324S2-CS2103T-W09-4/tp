@@ -399,6 +399,7 @@ POLICY_NAME can contain non-alphanumeric characters.
 </div>
 
 <br/>
+
 *  `POLICY_TYPE` is the type of policy to be added. (e.g. "Health", "Car", "Life")
 
 
@@ -426,22 +427,23 @@ following options (case insensitive):
 
 <br/>
 
-*  `POLICY_PREMIUM` is the premium of the policy. You may use alphanumeric characters for the abbreviation of
-large numbers or to indicate non-cash payment methods. (e.g. "100mil", "500 CPF OA")
+*  `POLICY_PREMIUM` is the premium of the policy. You may use alphanumeric characters, including spaces, for the 
+abbreviation of large numbers or to indicate non-cash payment methods. (e.g. "100mil", "500 CPF OA") 
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_PREMIUM MUST be alphanumeric characters only!
+POLICY_PREMIUM MUST be alphanumeric characters and spaces only!
 </div>
 
 <br/>
-*  `BENEFIT` is the policy's benefit (e.g. sum assured). You may use alphanumeric characters for the abbreviation of
+
+*  `BENEFIT` is the policy's benefit (e.g. sum assured). You may use alphanumeric characters, including spaces, for the abbreviation of
 large numbers. (e.g. "100mil", "100M")
 
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-BENEFIT MUST be alphanumeric characters only!
+BENEFIT MUST be alphanumeric characters and spaces only!
 </div>
 
 <br/>
@@ -493,7 +495,7 @@ Format: `findPolicy POLICY_NAME`
 * `POLICY_NAME` is the part of the policy you are searching for.
 <div style="border: 1px solid #28a745; background-color: #d4edda; padding: 10px; border-radius: 5px;">
     <span style="font-size: 20px; color: #007bff;">&#x1F4A1;</span> <strong>Tip:</strong>
-    It does not need to be an exact match to the full policy name.
+    POLICY_NAME does not need to be an exact match to the full policy name. It is also case-insensitive.
 </div>
 
 <br/>
@@ -582,7 +584,6 @@ AddressBook data are saved in the hard disk automatically after any command that
 ## Known issues
 
 
-
 1.  **When using multiple screens**, if you move the application to a secondary screen, and later switch to using
 only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created
 by the application before running the application again.
@@ -590,10 +591,10 @@ by the application before running the application again.
 3. Phone number field is allowed to have any amount of digits. However, if the number exceeds a certain amount, the application window will cut off the numbers that exceed the window size. Please ensure that your phone numbers added are logical within the size of the window.
 4. Phone number and email are all not unique, i.e. two clients can have the same phone number. Address is non-unique too, but this is intended as you may have clients living together. <br>
    Again, please **ensure you type in your client's details carefully** to prevent the situation of clients having duplicate phone numbers or email addresses.
-4. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
+5. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
 To view the policy name in full, please use the view command to look at the policy details in full and the full policy name will be displayed.
-
-
+6. Invalid entries for the Index field may raise different error messages, however, it will still be clear in the message that the input is invalid.
+7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can scroll down in the client panel to access the other details of the client that were not visible.
 
 --------------------------------------------------------------------------------------------------------------------
 
