@@ -210,7 +210,7 @@ Meeting field input <strong>MUST</strong> be a date and time in the future!
 
 MEETING_TIME <strong>MUST</strong> be unique!
 
-Name <strong>MUST</strong> be alphanumeric characters only!
+Name <strong>MUST</strong> be alphanumeric characters only, and unique across clients!
 
 PHONE_NUMBER <strong>MUST</strong> be numeric characters only! <strong> Min: 3 characters</strong>
 </div>
@@ -219,7 +219,7 @@ PHONE_NUMBER <strong>MUST</strong> be numeric characters only! <strong> Min: 3 c
 
 <div style="border: 1px solid #28a745; background-color: #d4edda; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x1F4A1;</span> <strong>Tip:</strong>
-It is optional for the client to have tags. A client can have any number of tags (including 0). TAG <strong>MUST</strong> be alphanumeric characters only!
+It is optional for the client to have tags. A client can have any number of tags (including 0). TAG <strong>MUST</strong> be alphanumeric characters only (space is not allowed)!
 </div>
 
 <br/>

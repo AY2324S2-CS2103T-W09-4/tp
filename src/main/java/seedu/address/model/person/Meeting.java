@@ -4,6 +4,7 @@ import static java.util.Objects.requireNonNull;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
@@ -87,6 +88,7 @@ public class Meeting implements Comparable<Meeting> {
         }
         try {
             LocalDate dateCheck = LocalDate.parse(dateTime.substring(0, 10)); // Check that the date is valid.
+            LocalTime timeCheck = LocalTime.parse(dateTime.substring(11)); // Check that the time is valid.
             return LocalDateTime.parse(dateTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
         } catch (DateTimeParseException e) {
             throw new IllegalArgumentException(MESSAGE_CONSTRAINTS);
