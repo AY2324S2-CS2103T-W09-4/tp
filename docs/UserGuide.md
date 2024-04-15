@@ -393,6 +393,12 @@ pterm/PREMIUM_TERM prem/POLICY_PREMIUM b/BENEFIT`
 
 * Adds a policy to the person at the specified `INDEX`.
 
+<div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
+<span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
+The `Policies` tab in the UI is supposed to be empty when the user operates or enters commands in the list view. Adding/deleting policies does not have any effect to the `Policies` tab of the UI in this view.
+`Policies` tab is expanded and displays content <strong>only when the user enters the view command</strong>, which shows all the selected user's policies.
+</div>
+
 * The index refers to the index number shown in the displayed client list.
   The index must be a positive integer 1, 2, 3, …​
 
@@ -411,6 +417,7 @@ POLICY_NAME can contain non-alphanumeric characters.
 </div>
 
 <br/>
+
 *  `POLICY_TYPE` is the type of policy to be added. (e.g. "Health", "Car", "Life")
 
 
@@ -438,22 +445,25 @@ following options (case insensitive):
 
 <br/>
 
-*  `POLICY_PREMIUM` is the premium of the policy. You may use alphanumeric characters for the abbreviation of
-large numbers or to indicate non-cash payment methods. (e.g. "100mil", "500 CPF OA")
+*  `POLICY_PREMIUM` is the premium of the policy. You may use alphanumeric characters, including spaces, for the 
+abbreviation of large numbers or to indicate non-cash payment methods. (e.g. "100mil", "500 CPF OA") 
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_PREMIUM <strong>MUST</strong> be alphanumeric characters only!
+
+POLICY_PREMIUM <strong>MUST</strong> be alphanumeric characters and spaces only!
 </div>
 
 <br/>
-*  `BENEFIT` is the policy's benefit (e.g. sum assured). You may use alphanumeric characters for the abbreviation of
+
+*  `BENEFIT` is the policy's benefit (e.g. sum assured). You may use alphanumeric characters, including spaces, for the abbreviation of
 large numbers. (e.g. "100mil", "100M")
 
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-BENEFIT <strong>MUST</strong> be alphanumeric characters only!
+
+BENEFIT <strong>MUST</strong> be alphanumeric characters and spaces only!
 </div>
 
 <br/>
@@ -505,7 +515,7 @@ Format: `findPolicy POLICY_NAME`
 * `POLICY_NAME` is the part of the policy you are searching for.
 <div style="border: 1px solid #28a745; background-color: #d4edda; padding: 10px; border-radius: 5px;">
     <span style="font-size: 20px; color: #007bff;">&#x1F4A1;</span> <strong>Tip:</strong>
-    It does not need to be an exact match to the full policy name.
+    POLICY_NAME does not need to be an exact match to the full policy name. It is also case-insensitive.
 </div>
 
 <br/>
@@ -594,7 +604,6 @@ AddressBook data are saved in the hard disk automatically after any command that
 ## Known issues
 
 
-
 1.  **When using multiple screens**, if you move the application to a secondary screen, and later switch to using
 only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created
 by the application before running the application again.
@@ -604,9 +613,8 @@ by the application before running the application again.
    Again, please **ensure you type in your client's details carefully** to prevent the situation of clients having duplicate phone numbers or email addresses.
 5. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
 To view the policy name in full, please use the view command to look at the policy details in full and the full policy name will be displayed.
-6. The `Policies` tab in the UI is supposed to be empty when the user operates or enters commands in the list view. Adding/deleting policies does not have any effect to the `Policies` tab of the UI in this view.
-`Policies` tab is expanded and displays content only when the user enters the `view` command, which shows all the selected user's policies.
-
+6. Invalid entries for the Index field may raise different error messages, however, it will still be clear in the message that the input is invalid.
+7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can scroll down in the client panel to access the other details of the client that were not visible.
 
 
 --------------------------------------------------------------------------------------------------------------------
