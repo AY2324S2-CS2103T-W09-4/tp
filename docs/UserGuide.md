@@ -607,14 +607,14 @@ AddressBook data are saved in the hard disk automatically after any command that
 1.  **When using multiple screens**, if you move the application to a secondary screen, and later switch to using
 only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created
 by the application before running the application again.
-2. Phone number field is allowed to be a nonsensical number, e.g. "123". Please **ensure you type in your client's phone number carefully** to avoid recording down an incorrect number. Future versions will check the phone number field to make your workflow less error-prone.
+2. Phone number field is allowed to be any number, e.g. "123". Please **ensure you type in your client's phone number carefully** to avoid recording down an incorrect number. Future versions will check the phone number field to make your workflow less error-prone.
 3. Phone number field is allowed to have any amount of digits. However, if the number exceeds a certain amount, the application window will cut off the numbers that exceed the window size. Please ensure that your phone numbers added are logical within the size of the window.
 4. Phone number and email are all not unique, i.e. two clients can have the same phone number. Address is non-unique too, but this is intended as you may have clients living together. <br>
    Again, please **ensure you type in your client's details carefully** to prevent the situation of clients having duplicate phone numbers or email addresses.
 5. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
-To view the policy name in full, please use the view command to look at the policy details in full and the full policy name will be displayed.
-6. Invalid entries for the Index field may raise different error messages, however, it will still be clear in the message that the input is invalid.
-7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can scroll down in the client panel to access the other details of the client that were not visible.
+To view the policy name in full, please **use the view command** to look at the policy details in full and the **full policy name will be displayed**.
+6. Invalid entries for the index field may raise different error messages, however, it will still be **clear** in the message that the **input is invalid**.
+7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can **scroll down** in the client panel to access the other details of the client that were not visible.
 
 
 --------------------------------------------------------------------------------------------------------------------
