@@ -56,7 +56,8 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 
    <img src="images/NewTerminal.png" alt="New Terminal at Folder" width="387" height="350"/>
 
-	**[Linux]** this depends on the environment and file manager. Look for any buttons similar to the ones shown above, e.g. "Open in Terminal" or "Open Terminal Here".
+	**[Linux]** this depends on the environment and file manager. Look for any buttons similar to the ones shown above, e.g. "Open in Terminal" or "Open Terminal Here". <br>
+    If you **can't find** any of these buttons (e.g. using a different OS), and can't find similar buttons, we recommend using `cd` to navigate to this folder.
    <br><br>
    
 5. Type `java -jar insurebook.jar` to run the application.<br>
