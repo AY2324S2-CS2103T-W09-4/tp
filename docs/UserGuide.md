@@ -74,8 +74,8 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
    | Meetings Panel    | Displays* all meeting dates and times, along with the client's name |
    | Clients Panel     | Displays clients' details (Name, phone number, etc.)                |
    | Policies Panel    | Displays the selected client's policies details (when using `view`) |
-	<br>
 
+	<br>
 	<div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
 	<span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
 	The Meetings panel displays meetings in the same order as the Clients panel in <code>list</code> view, and is NOT sorted chronologically.
