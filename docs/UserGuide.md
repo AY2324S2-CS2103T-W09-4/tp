@@ -213,6 +213,8 @@ ADDRESS does not need to be unique across different clients.
 
 <br/>
 
+<div style="page-break-after: always;"></div>
+
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
 
@@ -251,11 +253,9 @@ Shows a list of all clients in InsureBook.
 	![List](images/listCommand.png) <br><br>
 Format: `list`
 
-
+<div style="page-break-after: always;"></div>
 
 ### Editing a client : `edit`
-
-
 
 Edits an existing client in InsureBook.
 	![Edit](images/editCommand.png) <br><br>
@@ -482,6 +482,7 @@ Examples:
 
 *  `addPolicy 1 pol/SuperSaver type/CI polnum/39376234 pterm/Annually prem/3000 b/100000`
 
+<div style="page-break-after: always;"></div>
 
 
 ### Deleting an existing policy from a client : `delPolicy`
