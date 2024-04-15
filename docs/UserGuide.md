@@ -415,7 +415,7 @@ POLICY_NAME can contain non-alphanumeric characters.
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_TYPE MUST be alphanumeric characters only!
+POLICY_TYPE <strong>MUST</strong> be alphanumeric characters only!
 </div>
 
 <br/>
@@ -442,7 +442,7 @@ large numbers or to indicate non-cash payment methods. (e.g. "100mil", "500 CPF 
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_PREMIUM MUST be alphanumeric characters only!
+POLICY_PREMIUM <strong>MUST</strong> be alphanumeric characters only!
 </div>
 
 <br/>
@@ -452,7 +452,7 @@ large numbers. (e.g. "100mil", "100M")
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-BENEFIT MUST be alphanumeric characters only!
+BENEFIT <strong>MUST</strong> be alphanumeric characters only!
 </div>
 
 <br/>
@@ -601,8 +601,10 @@ by the application before running the application again.
 3. Phone number field is allowed to have any amount of digits. However, if the number exceeds a certain amount, the application window will cut off the numbers that exceed the window size. Please ensure that your phone numbers added are logical within the size of the window.
 4. Phone number and email are all not unique, i.e. two clients can have the same phone number. Address is non-unique too, but this is intended as you may have clients living together. <br>
    Again, please **ensure you type in your client's details carefully** to prevent the situation of clients having duplicate phone numbers or email addresses.
-4. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
+5. If the entered policy name exceeds a certain amount of characters, the application window would cut off the characters that are out of the frame in the policy tag. 
 To view the policy name in full, please use the view command to look at the policy details in full and the full policy name will be displayed.
+6. The `Policies` tab in the UI is supposed to be empty when the user operates or enters commands in the list view. Adding/deleting policies does not have any effect to the `Policies` tab of the UI in this view.
+`Policies` tab is expanded and displays content only when the user enters the `view` command, which shows all the selected user's policies.
 
 
 
