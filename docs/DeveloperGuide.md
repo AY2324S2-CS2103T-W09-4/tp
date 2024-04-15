@@ -424,9 +424,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC02 - Add a client**
 
@@ -451,9 +451,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes from step 1.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC03 - List all clients**
 
@@ -466,9 +466,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC04 - Edit a client**
 
@@ -505,9 +505,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 3.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC05 - View a client**
 
@@ -531,9 +531,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 2.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC06 - Find a client**
 
@@ -552,9 +552,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes from step 1.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC07 - Add a policy**
 
@@ -572,15 +572,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-- 2a. The given index is invalid.
+-2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC08 - Delete a policy**
 
@@ -598,21 +598,21 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-- 2a. The given index is invalid.
+-2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-- 3a. The given policy number is invalid or does not exist
+-3a. The given policy number is invalid or does not exist
 
 - 3a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC09 - Find a policy**
 
@@ -630,15 +630,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
-- 2a. The given keyword is invalid.
+-2a. The given keyword is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC10 - Delete a client**
 
@@ -662,9 +662,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 2.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case: UC11 - View upcoming meetings for the present week**
 
@@ -698,9 +698,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case ends.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 **Use case UC13: Exit program**
 
@@ -711,9 +711,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
    Use case ends.
 
-* a. At any time, user inputs an invalid command/syntax.
+\*a. At any time, user inputs an invalid command/syntax.
 
-* a1. InsureBook shows an error message.
+\*a1. InsureBook shows an error message.
 
 ### Non-Functional Requirements
 
