@@ -56,7 +56,8 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 
    <img src="images/NewTerminal.png" alt="New Terminal at Folder" width="387" height="350"/>
 
-	**[Linux]** this depends on the environment and file manager. Look for any buttons similar to the ones shown above, e.g. "Open in Terminal" or "Open Terminal Here".
+	**[Linux]** this depends on the environment and file manager. Look for any buttons similar to the ones shown above, e.g. "Open in Terminal" or "Open Terminal Here". <br>
+    If you **can't find** any of these buttons (e.g. using a different OS), and can't find similar buttons, we recommend using `cd` to navigate to this folder.
    <br><br>
    
 5. Type `java -jar insurebook.jar` to run the application.<br>
@@ -73,8 +74,8 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
    | Meetings Panel    | Displays* all meeting dates and times, along with the client's name |
    | Clients Panel     | Displays clients' details (Name, phone number, etc.)                |
    | Policies Panel    | Displays the selected client's policies details (when using `view`) |
-	<br>
 
+	<br>
 	<div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
 	<span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
 	The Meetings panel displays meetings in the same order as the Clients panel in <code>list</code> view, and is NOT sorted chronologically.
