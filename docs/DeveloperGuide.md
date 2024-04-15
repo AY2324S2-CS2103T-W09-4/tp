@@ -363,16 +363,23 @@ These are some proposed features that can be implemented in the future.
 - This feature would allow users to easily delete policies, without having to type out the whole policy number.
 
 #### Improving allowed inputs
-Change the allowed inputs for certain fields so that they make logical sense.
+- Change the allowed inputs for certain fields so that they make logical sense.
+  - Improve allowed inputs for phone number (ensure it is 8 digits long and starts with 6, 8 or 9)
+  - Improve allowed input for phone number and email fields (ensure that these fields are unique across clients)
 
-- Improve allowed inputs for phone number (ensure it is 8 digits long and starts with 6, 8 or 9)
-- Improve allowed input for phone number and email fields (ensure that these fields are unique across clients)
-
-#### Fixing text out of boundaries in UI
+#### Fixing text that gets cut off in UI
 - Right now, long input fields may cause text to be cut off in the UI, e.g. a long client name might get cut off in the UI with `...`
 - This can be fixed by either:
   - limiting the number of characters allowed in the name. This is not ideal as certain clients may in fact have very long names, and we should allow these names too.
   - fixing UI such that text out of boundaries are wrapped. This is the better solution.
+
+#### Improve validity checks for inputs
+- Ensure that error messages that are shown are consistent throughout all commands.
+  - Ensure that all types of invalid index inputs raise the same error.
+
+#### Improve UI layout
+- Tweak the UI such that all client details are displayed in the UI with the `view` command, regardless of the window size of the application.
+
 ---
 
 ## **Documentation, logging, testing, configuration, dev-ops**
@@ -416,10 +423,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 | `* * *`  | insurance agent           | search for details                                   | find client's information                                                |
 | `* * *`  | insurance agent           | add clients insurances and policies                  | keep track of my clients policies and insurances                         |
 | `* *`    | new insurance agent       | view all commands                                    | figure out how to use the application                                    |
-| `* * *`  | insurance agent           | add insurance and policies to clients                | add new policies to clients                                              |
 | `* * *`  | insurance agent           | delete clients insurances and policies               | remove client's previous policies                                        |
 | `* *`    | insurance agent           | search for clients with specified policies           | keep track of who has the specified policies which may have an update    |
-| `* *`    | insurance agent           | edit details of the client's policies and insurances | update myself on any changes made when my clients' update their policies |
 | `* * *`  | forgetful insurance agent | add meeting date/time                                | organise my day and meeting time with the client                         |
 | `* *`    | organised insurance agent | view all my meetings in the dashboard                | see all my meetings with my clients                                      |
 | `* * *`  | organised insurance agent | view upcoming meetings for the week                  | prepare for my upcoming meetings with clients                            |
@@ -511,7 +516,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 1. User requests to <u>list all clients</u> (UC03).
 2. User requests to view a specific client in the list.
-3. InsureBook shows only the specified client's PersonCard in the Clients section of UI.
+3. InsureBook shows the client's details and each of their policy's full details.
 
    Use case ends.
 
