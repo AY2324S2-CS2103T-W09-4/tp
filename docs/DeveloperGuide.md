@@ -355,13 +355,24 @@ These are some proposed features that can be implemented in the future.
 
 #### Adding a policy displays it in the Policies panel
 
-- Proposed implementation: Modify CommandResult to have an `isAddPolicy()` method. In the MainWindow class, modify `executeCommand` - if the command result isAddPolicy, display the newly added policy in the PolicyListPanel.
+- A possible implementation: Modify CommandResult to have an `isAddPolicy()` method. In the MainWindow class, modify `executeCommand` - if the command result isAddPolicy, display the newly added policy in the PolicyListPanel.
 - This feature would allow users to easily check the details of the newly added policy, without having to look through the user feedback box.
 
 #### Delete policies using the policy's index in Policies panel
 
 - This feature would allow users to easily delete policies, without having to type out the whole policy number.
 
+#### Improving allowed inputs
+Change the allowed inputs for certain fields so that they make logical sense.
+
+- Improve allowed inputs for phone number (ensure it is 8 digits long and starts with 6, 8 or 9)
+- Improve allowed input for phone number and email fields (ensure that these fields are unique across clients)
+
+#### Fixing text out of boundaries in UI
+- Right now, long input fields may cause text to be cut off in the UI, e.g. a long client name might get cut off in the UI with `...`
+- This can be fixed by either:
+  - limiting the number of characters allowed in the name. This is not ideal as certain clients may in fact have very long names, and we should allow these names too.
+  - fixing UI such that text out of boundaries are wrapped. This is the better solution.
 ---
 
 ## **Documentation, logging, testing, configuration, dev-ops**
