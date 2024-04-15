@@ -13,7 +13,9 @@
 
 ## **Acknowledgements**
 
-_{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }_
+_ Our project is based on [AddressBook Level-3](https://github.com/nus-cs2103-AY2324S2/tp)
+_ External libraries used: [JavaFX](https://openjfx.io/) for our UI, [Jackson](https://github.com/FasterXML/jackson) 
+for data management and storage, [JUnit5](https://junit.org/junit5/) for testing.
 
 ---
 
@@ -235,9 +237,9 @@ tag with the inputted policy name.
 
 - **Alternative 1 (current choice):** Encompass the policy details into a single Policy class with the details
   as attributes to the Policy class
-  _ Pros: Good abstraction level to organise all the policy information into one convenient class that can be
+  - Pros: Good abstraction level to organise all the policy information into one convenient class that can be
   referenced and have its own methods.
-  _ Cons: Not as straightforward to implement and requires updating multiple classes
+  - Cons: Not as straightforward to implement and requires updating multiple classes
 
 - **Alternative 2:** Individual policy details as their own attributes to Person object
   itself.
@@ -376,18 +378,20 @@ These are some proposed features that can be implemented in the future.
 
 ### Product scope
 
-**Target user profile**: An insurance Agent who
+**Target user profile**: An insurance agent who
 
-- has a need to manage a significant number of contacts and their policies
+- has a need to manage a significant number of clients and keep track of each client's policies
+- has a need for an all-in-one application to schedule his appointments and remind him of upcoming meetings
 - prefer desktop apps over other types
 - can type fast
 - prefers typing to mouse interactions
 - is reasonably comfortable using CLI apps
-- Needs a one application to schedule his appointments and reminds him about it
 
-**Value proposition**: Assist Insurance Agent keep track of their clients and new clients.
-This provides them with a 1 application to add details about their clients insurance plans and
-set reminders for meetups with clients.
+
+**Value proposition**: InsureBook is an all-in-one application designed to allow Insurance Agents to keep track 
+of their client's personal information and policies. Our application also allows Insurance Agents to schedule 
+meetings with clients. With our application, Insurance Agents can centralise their workflows and achieve increased
+work efficiency.
 
 ### User stories
 
@@ -411,7 +415,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `InsureBook` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is `InsureBook` and the **Actor** is the `user`, unless specified otherwise)
 
 **Use case: UC01 - View help**
 
@@ -421,12 +425,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 2. InsureBook opens up the help window, displaying the command summary.
 
    Use case ends.
-
-**Extensions**
-
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC02 - Add a client**
 
@@ -451,10 +449,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes from step 1.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
-
 **Use case: UC03 - List all clients**
 
 **MSS**
@@ -464,11 +458,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
    Use case ends.
 
-**Extensions**
-
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC04 - Edit a client**
 
@@ -505,10 +494,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 3.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
-
 **Use case: UC05 - View a client**
 
 **MSS**
@@ -531,10 +516,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 2.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
-
 **Use case: UC06 - Find a client**
 
 **MSS**
@@ -552,9 +533,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes from step 1.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC07 - Add a policy**
 
@@ -572,15 +550,12 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given index is invalid.
+- 2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC08 - Delete a policy**
 
@@ -598,21 +573,18 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given index is invalid.
+- 2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
--3a. The given policy number is invalid or does not exist
+- 3a. The given policy number is invalid or does not exist
 
 - 3a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC09 - Find a policy**
 
@@ -630,15 +602,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given keyword is invalid.
+- 2a. The given keyword is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
-
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC10 - Delete a client**
 
@@ -662,9 +630,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case resumes at step 2.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case: UC11 - View upcoming meetings for the present week**
 
@@ -698,9 +663,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     Use case ends.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 **Use case UC13: Exit program**
 
@@ -711,9 +673,6 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
    Use case ends.
 
-\*a. At any time, user inputs an invalid command/syntax.
-
-\*a1. InsureBook shows an error message.
 
 ### Non-Functional Requirements
 
