@@ -13,8 +13,9 @@
 
 ## **Acknowledgements**
 
-_ Our project is based on [AddressBook Level-3](https://github.com/nus-cs2103-AY2324S2/tp)
-_ External libraries used: [JavaFX](https://openjfx.io/) for our UI, [Jackson](https://github.com/FasterXML/jackson) 
+Our project is based on [AddressBook Level-3](https://github.com/nus-cs2103-AY2324S2/tp)
+
+External libraries used: [JavaFX](https://openjfx.io/) for our UI, [Jackson](https://github.com/FasterXML/jackson) 
 for data management and storage, [JUnit5](https://junit.org/junit5/) for testing.
 
 ---
