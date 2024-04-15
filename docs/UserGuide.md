@@ -39,6 +39,7 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 <page-nav-print  />
 
 <div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick start
@@ -117,6 +118,7 @@ For the best experience, use InsureBook in full-screen!
 </div>
 
 <div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 
@@ -172,6 +174,7 @@ multiple lines as space characters surrounding line-breaks may be omitted when c
 </box>
 
 <div style="page-break-after: always;"></div>
+
 --------------------------------------------------------------------------------------------------------------------
 
 
