@@ -43,18 +43,21 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 ## Quick start
 
 
-1. Ensure you have Java `11` or above installed in your Computer.
-   - If your computer is not running Java version `11` or above, you may download it from [here](https://www.oracle.com/java/technologies/downloads/#java11).
+1. Ensure you have Java `11` or above installed in your Computer.<br>
+   If your computer is not running Java version `11` or above, you may download it from [here](https://www.oracle.com/java/technologies/downloads/#java11).
 2. Download the latest `InsureBook.jar` from [here](https://github.com/AY2324S2-CS2103T-W09-4/tp/releases).
 3. Copy the file to the folder you want to use as the _home folder_ for InsureBook.
 4. Open a command terminal and `cd` into the folder you put the jar file in. Alternatively, <br>
-   **[Windows]** right-click anywhere in the display pane's background, then click "Open in Terminal":
+   **[Windows 11]** right-click anywhere in the display pane's background, then click "Open in Terminal":
 
    <img src="images/OpenInTerminal.png" alt="Open in Terminal" width="457" height="260"/>
 
    **[macOS]** right-click on the _home folder_ and click "New Terminal at Folder":
 
    <img src="images/NewTerminal.png" alt="New Terminal at Folder" width="387" height="350"/>
+
+	**[Linux]** this depends on the environment and file manager. Look for any buttons similar to the ones shown above, e.g. "Open in Terminal" or "Open Terminal Here". <br>
+    If you **can't find** any of these buttons (e.g. using a different OS), and can't find similar buttons, we recommend using `cd` to navigate to this folder.
    <br><br>
    
 5. Type `java -jar insurebook.jar` to run the application.<br>
@@ -62,8 +65,17 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
    ![Ui](images/Ui.png) <br> <br>
 
    Labelling each component of the UI:
-   ![Ui-labelled](images/Ui-labelled.png) <br><br>
+   ![Ui-labelled](images/Ui-labelled.png) <br>
 
+   | Component         | Explanation                                                         |
+   |-------------------|---------------------------------------------------------------------|
+   | Input Box         | This is where you key in inputs                                     |
+   | User Feedback Box | After entering an input, feedback will be shown to you here         |
+   | Meetings Panel    | Displays* all meeting dates and times, along with the client's name |
+   | Clients Panel     | Displays clients' details (Name, phone number, etc.)                |
+   | Policies Panel    | Displays the selected client's policies details (when using `view`) |
+
+	<br>
 	<div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
 	<span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
 	The Meetings panel displays meetings in the same order as the Clients panel in <code>list</code> view, and is NOT sorted chronologically.
@@ -162,7 +174,7 @@ multiple lines as space characters surrounding line-breaks may be omitted when c
 ### Finding help : `help`
 
 Opens a pop-up window with the link to InsureBook's User Guide and Command Summary for your reference.
-The linked can be copied with using the 'Enter' key, and can be closed using the 'Esc' key.
+The link can be copied by using the 'Enter' key, and the window can be closed using the 'Esc' key.
 	![Help](images/helpCommand.png) <br><br>
 Format: `help`
 
@@ -182,11 +194,11 @@ Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS m/MEETING_DATE MEETING_TIME
 <div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
 
-PHONE_NUMBER does not need to be unique.
+PHONE_NUMBER does not need to be unique across different clients.
 
-EMAIL does not need to be unique.
+EMAIL does not need to be unique across different clients.
 
-ADDRESS does not need to be unique.
+ADDRESS does not need to be unique across different clients.
 </div>
 
 <br/>
@@ -381,6 +393,12 @@ pterm/PREMIUM_TERM prem/POLICY_PREMIUM b/BENEFIT`
 
 * Adds a policy to the person at the specified `INDEX`.
 
+<div style="border: 1px solid #007bff; background-color: #cce5ff; padding: 10px; border-radius: 5px;">
+<span style="font-size: 20px; color: #007bff;">📝</span> <strong>Note:</strong>
+The `Policies` tab in the UI is supposed to be empty when the user operates or enters commands in the list view. Adding/deleting policies does not have any effect to the `Policies` tab of the UI in this view.
+`Policies` tab is expanded and displays content <strong>only when the user enters the view command</strong>, which shows all the selected user's policies.
+</div>
+
 * The index refers to the index number shown in the displayed client list.
   The index must be a positive integer 1, 2, 3, …​
 
@@ -405,7 +423,7 @@ POLICY_NAME can contain non-alphanumeric characters.
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_TYPE MUST be alphanumeric characters only!
+POLICY_TYPE <strong>MUST</strong> be alphanumeric characters only!
 </div>
 
 <br/>
@@ -432,7 +450,8 @@ abbreviation of large numbers or to indicate non-cash payment methods. (e.g. "10
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-POLICY_PREMIUM MUST be alphanumeric characters and spaces only!
+
+POLICY_PREMIUM <strong>MUST</strong> be alphanumeric characters and spaces only!
 </div>
 
 <br/>
@@ -443,7 +462,8 @@ large numbers. (e.g. "100mil", "100M")
 
 <div style="border: 1px solid #dc3545; background-color: #f8d7da; padding: 10px; border-radius: 5px;">
 <span style="font-size: 20px; color: #007bff;">&#x2757;</span> <strong>Caution:</strong>
-BENEFIT MUST be alphanumeric characters and spaces only!
+
+BENEFIT <strong>MUST</strong> be alphanumeric characters and spaces only!
 </div>
 
 <br/>
@@ -595,6 +615,7 @@ by the application before running the application again.
 To view the policy name in full, please use the view command to look at the policy details in full and the full policy name will be displayed.
 6. Invalid entries for the Index field may raise different error messages, however, it will still be clear in the message that the input is invalid.
 7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can scroll down in the client panel to access the other details of the client that were not visible.
+
 
 --------------------------------------------------------------------------------------------------------------------
 
