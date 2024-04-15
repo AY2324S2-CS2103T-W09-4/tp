@@ -548,7 +548,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given index is invalid.
+- 2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
@@ -571,13 +571,13 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given index is invalid.
+- 2a. The given index is invalid.
 
 - 2a1. InsureBook shows an error message.
 
   Use case resumes from step 2.
 
--3a. The given policy number is invalid or does not exist
+- 3a. The given policy number is invalid or does not exist
 
 - 3a1. InsureBook shows an error message.
 
@@ -600,7 +600,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
   Use case ends.
 
--2a. The given keyword is invalid.
+- 2a. The given keyword is invalid.
 
 - 2a1. InsureBook shows an error message.
 
