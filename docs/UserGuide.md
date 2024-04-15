@@ -9,7 +9,7 @@ pageNav: 3
 ---
 
 
-
+--------------------------------------------------------------------------------------------------------------------
 # InsureBook User Guide
 
 
@@ -38,6 +38,7 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 
 <page-nav-print  />
 
+<div style="page-break-after: always;"></div>
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick start
@@ -115,6 +116,7 @@ Some example commands you can try:
 For the best experience, use InsureBook in full-screen!
 </div>
 
+<div style="page-break-after: always;"></div>
 --------------------------------------------------------------------------------------------------------------------
 
 
@@ -168,6 +170,10 @@ e.g. if the command specifies `help 123`, it will be interpreted as `help`.
 multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
 
 </box>
+
+<div style="page-break-after: always;"></div>
+--------------------------------------------------------------------------------------------------------------------
+
 
 ## Commands
 
@@ -572,6 +578,7 @@ Format:`exit`
 
 AddressBook data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
 
+<div style="page-break-after: always;"></div>
 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -616,6 +623,7 @@ To view the policy name in full, please **use the view command** to look at the 
 6. Invalid entries for the index field may raise different error messages, however, it will still be **clear** in the message that the **input is invalid**.
 7. When using the view command, depending on window size, some of the client's details may not be visible. To remedy this, you can **scroll down** in the client panel to access the other details of the client that were not visible.
 
+<div style="page-break-after: always;"></div>
 
 --------------------------------------------------------------------------------------------------------------------
 
