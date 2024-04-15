@@ -40,6 +40,7 @@ InsureBook is a **desktop app for insurance agents to manage potential and exist
 
 <div style="page-break-after: always;"></div>
 
+
 --------------------------------------------------------------------------------------------------------------------
 
 ## Quick start
